@@ -1,17 +1,18 @@
+import { Metadata } from 'next';
 import { Sidebar } from '@/components/dashboard/Sidebar';
 import { MainAnalytics } from '@/components/dashboard/MainAnalytics';
 import { RightPanel } from '@/components/dashboard/RightPanel';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Dashboard | Finovate',
   description: 'Minimal modern fintech dashboard.',
 };
 
 export default function DashboardPage() {
   return (
-    <div className="min-h-screen bg-primary-50 dark:bg-gray-950 font-sans text-gray-900 dark:text-gray-100 flex justify-center">
-      {/* Outer shell to center content on ultra-wide screens */}
-      <div className="w-full max-w-[1920px] relative flex h-screen overflow-hidden">
+    <div className="w-full min-h-screen bg-primary-50 dark:bg-gray-950 font-sans text-gray-900 dark:text-gray-100 flex">
+      {/* Outer shell */}
+      <div className="w-full relative flex h-screen overflow-hidden">
         
         {/* Sidebar */}
         <Sidebar />
