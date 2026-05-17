@@ -48,6 +48,9 @@ export const LandingHeader = ({
         className,
       )}
     >
+    
+    {/* Clickable "Finovate" logo */}
+
       <div className="flex items-center">
         <Link href="/" className="text-2xl font-bold">
           <div className="flex items-center gap-3 justify-between">
@@ -63,9 +66,13 @@ export const LandingHeader = ({
           </div>
         </Link>
       </div>
+    
+    {/* The Desktop Links */}
 
       <div className="hidden md:flex items-center gap-6">{children}</div>
 
+    {/* The Mobile Menu */}
+    
       <div className="md:hidden">
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
